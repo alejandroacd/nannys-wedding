@@ -1,5 +1,5 @@
 {
-    "landing_text": "¡Nos casamos! Y realmente queremos que estés allí. Por favor, confirma tu asistencia en el botón de abajo.",
+    "landing_text": "¡Nos vamos a casar! Y realmente queremos que estés allí.",
     "landing_button": "Confirma tu asistencia",
     "our_story_title": "Nuestra historia",
     "our_story_girlfriend": "La prometida",
@@ -107,6 +107,13 @@
     "hotels_lexington": "Ubicación del aeropuerto más cercano; a 23 millas / 32 minutos del lugar del evento.",
     "hotels_louisville": "A 53 millas / 57 minutos del lugar del evento.",
     "dresscode_description": "Si tienes dudas sobre el código de vestimenta de cóctel, aquí tienes un enlace que lo explica en detalle:",
-    "dresscode_link":"https://www.elespanol.com/mujer/belleza/20221010/codigo-dress-code-coctel-claves-acertar/696180676_0.html"
-
+    "dresscode_link":"https://www.elespanol.com/mujer/belleza/20221010/codigo-dress-code-coctel-claves-acertar/696180676_0.html",
+    "note": "Nota",
+    "airbnb_description": "Si prefieres alquilar un Airbnb, puedes encontrar opciones disponibles cerca del evento en Lawrenceburg en el siguiente link:",
+    "brief_title": "¡Diremos el sí!",
+    "brief_description": "Estamos emocionados de compartir este momento tan especial con ustedes. En esta página encontrarán toda la información sobre nuestra celebración y nuestra historia.",
+    "brief_details": "Esperamos verlos pronto para celebrar juntos este día lleno de amor. 💖 Les pedimos que confirmen su asistencia haciendo click en el botón <b>\"confirma tu asistencia\"</b> y llenando el formulario. Su presencia es muy importante para nosotros y nos ayudará a planificar cada detalle. Si por alguna razón no pueden acompañarnos, también agradeceríamos que nos lo hicieran saber seleccionando la opción en el formulario.",
+    "brief_closing": "¡Gracias por ser parte de nuestra historia!",
+    "brief_signature": "Con cariño,",
+    "brief_names": "Evagianny y Mitchell"
 }

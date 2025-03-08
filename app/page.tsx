@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import Head from "next/head";
 import { Montserrat, Great_Vibes } from "next/font/google";
 import { OurStory } from "./views/our-story";
 import { Schedule } from "./views/schedule";
@@ -10,6 +11,7 @@ import FAQSection from "./views/faq";
 import FadeInSection from "./components/fade-in";
 import { useLanguage } from "@/context/LanguageContext";
 import ConfettiFirstEffect from "./components/confetti-first-effect";
+import { Brief } from "./views/brief";
 const greatVibes = Great_Vibes({
   weight: "400",
   subsets: ["latin"],
@@ -22,6 +24,12 @@ export default function Home() {
   const { t } = useLanguage();
   return (
     <>
+    <Head>
+      <title>Evagianny & Mitchell</title>
+      <meta name="description" content="The wedding of Evagianny and Mitchell" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta property="og:image" content="/monograma.png" />
+    </Head>
       <Toaster richColors position="top-center" />
       <ConfettiFirstEffect>
         <div className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat"
@@ -47,6 +55,7 @@ export default function Home() {
 
         </div>
       </ConfettiFirstEffect>
+      <Brief />
       <OurStory />
       <Schedule />
       <DressCode />

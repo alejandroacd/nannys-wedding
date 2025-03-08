@@ -127,6 +127,11 @@ export function HotelsSection() {
                     </ul>
                 </section>
             </div>
+            <section className={`my-12 flex flex-col  ${montserrat.className}`}>
+            <h1 className="text-primary font-bold text-2xl">{t("note")}</h1>
+            <p className="leading-7">{t("airbnb_description")}</p>
+            <a className="mt-5 text-primary" href="https://www.airbnb.com.ar/s/Lawrenceburg--KY/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJBbc9MNR5QogR7y2on1dTjg8&adults=1" >Airbnb Lawrenceburg</a>
+            </section>
         </section>
     );
 }

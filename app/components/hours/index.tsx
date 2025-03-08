@@ -15,7 +15,7 @@ export default function WeddingSchedule() {
           <div className="relative">
             {/* Timeline Line */}
             <div
-              className="absolute left-6 top-0 bottom-0 w-0.5 bg-primary"
+              className="absolute left-6 top-0 bottom-0 w-0.5 bg-background-primary"
               aria-hidden="true"
             ></div>
 

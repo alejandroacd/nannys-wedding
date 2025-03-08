@@ -30,7 +30,6 @@ export const OurStory = () => {
                         {t("our_story_title")}
                     </h1>
                 </FadeInSection>
-                <Separator className="my-5 w-1/2 mx-auto bg-background-primary" />
                 <section className="flex flex-col gap-[100px] md:gap-[150px]">
                     <Histories img="/nanngibel.jpg" name="Evagianny Contreras" text={t('our_story_girlfriendStory')} title={t('our_story_girlfriend')} />
                     <Histories img="/mitchell.jpg" name="Mitchell Solace" text={t('our_story_boyfriendStory')} title={t('our_story_boyfriend')} />
