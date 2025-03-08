@@ -113,7 +113,7 @@ export function SheetDemo() {
               </SheetClose>
             </li>          
             <Separator className="text-primary my-3" />
-            <li className="font-bold">
+            <li>
               <SheetClose asChild>
                 <a href="#faq" onClick={(e) => { e.preventDefault(); handleNavigation('#faq'); }}>
                   {t("menu_faq")}
