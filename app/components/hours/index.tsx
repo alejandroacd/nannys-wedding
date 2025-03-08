@@ -70,7 +70,7 @@ export default function WeddingSchedule() {
   )
 }
 
-function ScheduleItem({ icon, time, title, location, description }: any) {
+function ScheduleItem({ icon, time, title,  description }: any) {
   return (
     <div className={`${montserrat.className} flex items-start space-x-4`}>
       <div className="flex-shrink-0 w-12 h-12 bg-background-primary rounded-full flex items-center justify-center text-white">{icon}</div>

@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Heart, Clock, Calendar, MapPin } from "lucide-react"
+import {  Clock,  MapPin } from "lucide-react"
 import { motion } from "framer-motion"
 import { useLanguage } from "@/context/LanguageContext"
 import ConfettiEffect from "../confetti"
