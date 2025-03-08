@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import confetti from "canvas-confetti"
 
 interface ConfettiEffectProps {
@@ -14,7 +14,7 @@ interface ConfettiEffectProps {
   origin?: { x: number; y: number }
 }
 
-export default function ConfettiEffect({
+export default function ConfettiFirstEffect({
   children,
   colors,
   particleCount,
@@ -24,9 +24,10 @@ export default function ConfettiEffect({
   origin,
 }: ConfettiEffectProps) {
   const containerRef = useRef<HTMLDivElement>(null)
+  const [hasTriggered, setHasTriggered] = useState(false)
 
   useEffect(() => {
-    if (!containerRef.current) return
+    if (!containerRef.current || hasTriggered) return
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -41,12 +42,8 @@ export default function ConfettiEffect({
             decay: decay ?? 0.9,
             disableForReducedMotion: true,
           })
-
-          // Disconnect and re-observe after some time for repeated triggers
+          setHasTriggered(true)
           observer.disconnect()
-          setTimeout(() => {
-            if (containerRef.current) observer.observe(containerRef.current)
-          }, 3000) // Adjust the delay as needed
         }
       },
       { threshold: 0.1 },
@@ -55,7 +52,7 @@ export default function ConfettiEffect({
     observer.observe(containerRef.current)
 
     return () => observer.disconnect()
-  }, [colors, particleCount, spread, startVelocity, decay, origin])
+  }, [colors, particleCount, spread, startVelocity, decay, origin, hasTriggered])
 
   return <div ref={containerRef}>{children}</div>
 }

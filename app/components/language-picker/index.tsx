@@ -52,7 +52,7 @@ function LanguageSelectionDialog() {
             <p className="text-sm text-muted-foreground">
               Continue in English
             </p>
-            </div>
+            </div>  
             🇺🇸
           </Card>
           <Card

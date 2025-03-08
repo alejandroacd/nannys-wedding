@@ -1,6 +1,6 @@
 {
     "landing_text": "We are getting married! And we really want you to be there!. Please confirm in the button below.",
-    "landing_button": "Confirm your assistance",
+    "landing_button": "Confirm your attending",
     "our_story_title": "Our love story",
     "our_story_girlfriend": "The fianceé",
     "our_story_boyfriend": "The fiance",
@@ -105,5 +105,7 @@
     "hotels_lawrenceburg": "Location of the wedding and celebration.",
     "hotels_georgetown": "Residencia de la pareja; a 31 millas / 33 minutos del lugar del evento.",
     "hotels_lexington": "Location of the nearest airport; 23 miles / 32 minutes from the venue",
-    "hotels_louisville": "53 miles / 57 minutes from the venue"
+    "hotels_louisville": "53 miles / 57 minutes from the venue",
+    "dresscode_description": "If you're unsure about the cocktail dress code, here's a link that explains it in detail:",
+    "dresscode_link": "https://www.brides.com/cocktail-attire-wedding-4844364"
 }

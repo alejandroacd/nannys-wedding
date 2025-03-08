@@ -310,7 +310,7 @@ export function RsvpDialog() {
               {t("rsvp_form_thanks_text")}
             </p>
             <WeddingCountdown />
-            <Button onClick={() => setOpen(false)} className="bg-[#7f8563] hover:bg-[#6a7152]">
+            <Button onClick={() => setOpen(false)} className="bg-[#7f8563] mt-5 hover:bg-[#6a7152]">
               {t("rsvp_form_cancel_button")}
             </Button>
           </div>

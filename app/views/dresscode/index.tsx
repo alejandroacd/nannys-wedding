@@ -1,3 +1,4 @@
+import { Link } from "lucide-react";
 import { Great_Vibes, Montserrat } from "next/font/google";
 import FadeInSection from "@/app/components/fade-in";
 import { Separator } from "@/components/ui/separator";
@@ -25,6 +26,13 @@ export default function DressCode() {
                     <br />
                     <br />
                     {t("dress_code_final_text")}
+                    <br />
+                    <br />
+                    {t("dresscode_description")}
+                    <br />
+                    <br /> 
+                    
+                    <a className="text-primary" href={t("dresscode_link")}><Link className="w-6 h-6 inline-block" /> Go to link</a>
                 </p>
             </FadeInSection>
 

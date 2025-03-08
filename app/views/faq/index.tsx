@@ -34,6 +34,7 @@ export default function FAQSection() {
                 <div dangerouslySetInnerHTML={{ __html: t("answer_1") }} />
               </AccordionContent>
             </AccordionItem>
+            <Separator className="bg-background-primary" />
           </FadeInSection>
           <FadeInSection>
             <AccordionItem value="item-2">
@@ -43,6 +44,7 @@ export default function FAQSection() {
               <AccordionContent className="text-base">
                 <div dangerouslySetInnerHTML={{ __html: t("answer_2") }} />
               </AccordionContent>
+              <Separator className="bg-background-primary" />
             </AccordionItem>
           </FadeInSection>
           <FadeInSection>
@@ -54,6 +56,7 @@ export default function FAQSection() {
               <div dangerouslySetInnerHTML={{ __html: t("answer_3") }} />
             </AccordionContent>
           </AccordionItem>
+          <Separator className="bg-background-primary" /> 
           </FadeInSection>
           <FadeInSection>
           <AccordionItem value="item-4">
@@ -63,6 +66,7 @@ export default function FAQSection() {
             <AccordionContent className="text-base">
               <div dangerouslySetInnerHTML={{ __html: t("answer_4") }} />
             </AccordionContent>
+            <Separator className="bg-background-primary" />
           </AccordionItem>
 
           </FadeInSection>
@@ -75,6 +79,7 @@ export default function FAQSection() {
               <div dangerouslySetInnerHTML={{ __html: t("answer_5") }} />
             </AccordionContent>
           </AccordionItem>
+          <Separator className="bg-background-primary" />
         </FadeInSection>
 
         <FadeInSection>
@@ -85,6 +90,8 @@ export default function FAQSection() {
             <AccordionContent className="text-base">
               <div dangerouslySetInnerHTML={{ __html: t("answer_6") }} />
             </AccordionContent>
+            <Separator className="bg-background-primary" />
+
           </AccordionItem>
 
         </FadeInSection>
@@ -96,6 +103,8 @@ export default function FAQSection() {
             <AccordionContent className="text-base">
               <div dangerouslySetInnerHTML={{ __html: t("answer_7") }} />
             </AccordionContent>
+            <Separator className="bg-background-primary" />
+
           </AccordionItem>
 
        </FadeInSection>
@@ -108,6 +117,8 @@ export default function FAQSection() {
               <div dangerouslySetInnerHTML={{ __html: t("answer_8") }} />
             </AccordionContent>
           </AccordionItem>
+          <Separator className="bg-background-primary" />
+
        </FadeInSection>
 
        <FadeInSection>
@@ -119,6 +130,8 @@ export default function FAQSection() {
               <div dangerouslySetInnerHTML={{ __html: t("answer_9") }} />
             </AccordionContent>
           </AccordionItem>
+          <Separator className="bg-background-primary" />
+
        </FadeInSection>
 
       <FadeInSection>
