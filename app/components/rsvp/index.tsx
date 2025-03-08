@@ -71,7 +71,7 @@ export function RsvpDialog() {
       scalar: 2, // Scale up the hearts
     };
 
-    function fire({particleRatio, opts}: any) {
+    function fire(particleRatio: any, opts: any) {
       confetti({
         ...defaults,
         ...opts,
