@@ -18,16 +18,12 @@ function LanguageSelectionDialog() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Check if the user has already selected a language
-    const hasSelectedLanguage = localStorage.getItem('hasSelectedLanguage');
-    if (!hasSelectedLanguage) {
-      setIsOpen(true); // Show the dialog if no language is selected
-    }
+    // Always show the dialog when the component mounts
+    setIsOpen(true);
   }, []);
 
   const handleLanguageSelect = (language: 'en' | 'es') => {
     changeLanguage(language); // Change the language in the context
-    localStorage.setItem('hasSelectedLanguage', 'true'); // Save the selection
     localStorage.setItem('preferredLanguage', language); // Save the preferred language
     setIsOpen(false); // Close the dialog
   };
@@ -36,10 +32,9 @@ function LanguageSelectionDialog() {
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogContent className={`${montserrat.className} sm:max-w-md`}>
         <DialogHeader>
-          <DialogTitle>Hi! Can you choose your language? ✨
-</DialogTitle>
+          <DialogTitle>Hi! Can you choose your language? ✨</DialogTitle>
           <DialogDescription>
-          We'd love for you to feel at home! Please select your preferred language.
+            We'd love for you to feel at home! Please select your preferred language.
           </DialogDescription>
         </DialogHeader>
         <div className="flex flex-col gap-4">
@@ -48,10 +43,10 @@ function LanguageSelectionDialog() {
             onClick={() => handleLanguageSelect('en')}
           >
             <div className='flex flex-col'>
-            <h3 className="text-lg font-semibold text-primary">English</h3>
-            <p className="text-sm text-muted-foreground">
-              Continue in English
-            </p>
+              <h3 className="text-lg font-semibold text-primary">English</h3>
+              <p className="text-sm text-muted-foreground">
+                Continue in English
+              </p>
             </div>  
             🇺🇸
           </Card>
@@ -60,12 +55,11 @@ function LanguageSelectionDialog() {
             onClick={() => handleLanguageSelect('es')}
           >
             <div className='flex flex-col'>
-            <h3 className="text-lg font-semibold text-primary">Español</h3>
-            <p className="text-sm text-muted-foreground">
-              Continuar en Español
-            </p>
+              <h3 className="text-lg font-semibold text-primary">Español</h3>
+              <p className="text-sm text-muted-foreground">
+                Continuar en Español
+              </p>
             </div>
-           
             🇪🇸
           </Card>
         </div>
