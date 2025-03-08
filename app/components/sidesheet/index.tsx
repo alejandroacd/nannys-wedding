@@ -13,9 +13,7 @@ import {
 } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import { useLanguage } from "@/context/LanguageContext";
-import { useRef } from "react"; // Import useRef
-
+import { useLanguage } from "@/context/LanguageContext"
 const montserrat = Montserrat({ weight: "400", subsets: ["latin"] });
 
 export function SheetDemo() {

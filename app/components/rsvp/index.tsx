@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
 import { Montserrat } from "next/font/google"
-import { Heart, CalendarHeart, Utensils, Music, X } from "lucide-react"
+import { Heart, CalendarHeart, Utensils, Music } from "lucide-react"
 import confetti from "canvas-confetti";
 import { useLanguage } from "@/context/LanguageContext"
 import { Button } from "@/components/ui/button"
@@ -65,14 +65,13 @@ export function RsvpDialog() {
 
   function heartConfetti() {
     const heart = "❤️"; // Unicode heart emojimx-auto
-    const count = 75; // Number of hearts
     const defaults = {
       origin: { y: 0.6 }, // Start from the bottom of the screen
       colors: ["#FF1493", "#FF69B4", "#FFC0CB"], // Pink colors for hearts
       scalar: 2, // Scale up the hearts
     };
 
-    function fire(particleRatio: number, opts: any) {
+    function fire({particleRatio, opts}: any) {
       confetti({
         ...defaults,
         ...opts,
