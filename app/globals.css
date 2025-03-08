@@ -48,6 +48,26 @@
   filter: invert(100%);
 }
 
+/* Custom CSS for better responsiveness */
+@media (min-width: 768px) {
+  .histories-section {
+      gap: 150px; /* Adjust the gap between sections */
+  }
+
+  .histories-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for desktop */
+      gap: 50px; /* Adjust the gap between image and text */
+  }
+
+  .histories-image {
+      max-width: 500px; /* Limit the image size */
+  }
+
+  .histories-text {
+      text-align: justify; /* Justify text for better readability */
+  }
+}
+
 .text-primary {
 color: #7f8563 !important
 }

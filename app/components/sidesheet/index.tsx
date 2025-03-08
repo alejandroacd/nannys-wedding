@@ -113,15 +113,7 @@ export function SheetDemo() {
                   {t("menu_gifts")}
                 </a>
               </SheetClose>
-            </li>
-            <Separator className="text-primary my-3" />
-            <li className="font-bold">
-              <SheetClose asChild>
-                <a href="#rsvp" onClick={(e) => { e.preventDefault(); handleNavigation('#rsvp'); }}>
-                  RSVP
-                </a>
-              </SheetClose>
-            </li>
+            </li>          
             <Separator className="text-primary my-3" />
             <li className="font-bold">
               <SheetClose asChild>

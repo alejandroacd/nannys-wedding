@@ -38,7 +38,7 @@ export default function Home() {
         </div>
         </FadeInSection>
         <div className={`w-3/4 relative mx-auto ${montserrat.className}`}>
-        <p className="text-white z-50 text-[22px]  text-center">{t("landing_text")}</p>
+        <p className="text-white z-50 text-[18px]  text-center">{t("landing_text")}</p>
         </div>
       </div>
       <OurStory />

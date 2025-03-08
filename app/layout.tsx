@@ -17,7 +17,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Evagianny & Mitchell Wedding",
-  description: "The wedding of Evagianny and Mitchell"
+  description: "The wedding of Evagianny and Mitchell",
+  icons:"/monograma1.jpeg",
 };
 
 export default function RootLayout({

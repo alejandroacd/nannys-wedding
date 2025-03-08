@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 })
 export const WeddingPlace = () => {
     const { t } = useLanguage();
-    return <section className="">
+    return <section id="the-place">
         <FadeInSection>
             <h1 className={`text-5xl md:text-7xl my-4 md:my-6 md:text-center font-bold text-primary ${greatVibes.className}`}>{t('the_place')}</h1>
         </FadeInSection>
@@ -29,8 +29,7 @@ export const WeddingPlace = () => {
                 </div>
             </FadeInSection>
             <FadeInSection>
-
-                <span className="mx-10 text-muted-foreground">1173 Harry Wise Road, Lawrenceburg,
+                <span className=" text-muted-foreground">1173 Harry Wise Road, Lawrenceburg,
                     KY, 40342</span>
             </FadeInSection>
 

@@ -44,8 +44,6 @@ export default function RegistrySection() {
 
     return (
         <div className="max-w-4xl mx-auto px-4 py-12">
-
-
             <Tabs defaultValue="zelle" className="w-full">
                 <TabsList className="w-full">
                     <TabsTrigger value="zelle" className="text-sm sm:text-base">

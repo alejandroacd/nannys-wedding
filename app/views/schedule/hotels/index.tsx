@@ -14,7 +14,7 @@ const montserrat = Montserrat({ weight: "400", subsets: ["latin"] });
 export function HotelsSection() {
     const { t } = useLanguage();
     return (
-        <section className="flex flex-col p-6">
+        <section id="hotels" className="flex flex-col p-6">
             <Separator className="my-5 w-1/2 bg-background-primary" />
             <FadeInSection>
                 <h1 className={`text-5xl mb-12 md:text-7xl my-5 md:my-6 md:text-center font-bold text-primary ${greatVibes.className}`}>
